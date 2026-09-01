@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: homepage-services
+  namespace: homepage
+data:
+  services.yaml: |
+    - Kubernetes:
+        - Argo CD:
+            href: https://argocd.home
+            description: GitOps deployments
+
+        - Grafana:
+            href: http://grafana.home
+            description: Metrics and logs
+
+        - Longhorn:
+            href: http://longhorn.home
+            description: Kubernetes storage
+
+        - Headlamp:
+            href: http://headlamp.home
+            description: Kubernetes dashboard
+
+        - Uptime Kuma:
+            href: http://kuma.home
+            description: Service monitoring
+
+        - Pi-hole:
+            href: http://192.168.68.97/admin
+            description: DNS and ad blocking
