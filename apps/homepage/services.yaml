@@ -1,24 +1,33 @@
+
 - Kubernetes:
     - Argo CD:
+        icon: argo-cd.png
         href: https://argocd.home
-        description: GitOps deployments
-
-    - Grafana:
-        href: http://grafana.home
-        description: Metrics and logs
-
-    - Longhorn:
-        href: http://longhorn.home
-        description: Kubernetes storage
+        description: GitOps and app deployments
 
     - Headlamp:
+        icon: kubernetes.png
         href: http://headlamp.home
-        description: Kubernetes dashboard
+        description: Kubernetes cluster dashboard
+
+    - Longhorn:
+        icon: longhorn.png
+        href: http://longhorn.home
+        description: Persistent storage and volumes
+
+- Monitoring:
+    - Grafana:
+        icon: grafana.png
+        href: http://grafana.home
+        description: Metrics, dashboards, and logs
 
     - Uptime Kuma:
+        icon: uptime-kuma.png
         href: http://kuma.home
-        description: Service monitoring
+        description: Service uptime monitoring
 
+- Network:
     - Pi-hole:
+        icon: pi-hole.png
         href: http://192.168.68.97/admin
-        description: DNS and ad blocking
+        description: DNS filtering and local DNS
