@@ -25,7 +25,6 @@
         href: http://kuma.home
         description: Service uptime monitoring
 
- - Network:
     - Pi-hole:
         icon: pi-hole.png
         href: http://192.168.68.97/admin
@@ -34,7 +33,7 @@
           type: pihole
           url: http://192.168.68.97
           version: 6
-          key: PiHoleLab123!
+          key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
           fields:
             - queries
             - blocked
