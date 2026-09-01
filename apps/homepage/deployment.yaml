@@ -29,7 +29,11 @@ spec:
             - name: homepage-config
               mountPath: /app/config/settings.yaml
               subPath: settings.yaml
-
+              
+            - name: homepage-services
+              mountPath: /app/config/services.yaml
+              subPath: services.yaml
+              
       volumes:
         - name: homepage-data
           emptyDir: {}
@@ -37,3 +41,7 @@ spec:
         - name: homepage-config
           configMap:
             name: homepage-config
+
+        - name: homepage-services
+          configMap:
+            name: homepage-services
