@@ -25,8 +25,18 @@
         href: http://kuma.home
         description: Service uptime monitoring
 
-- Network:
+ - Network:
     - Pi-hole:
         icon: pi-hole.png
         href: http://192.168.68.97/admin
         description: DNS filtering and local DNS
+        widget:
+          type: pihole
+          url: http://192.168.68.97
+          version: 6
+          key: PiHoleLab123!
+          fields:
+            - queries
+            - blocked
+            - blocked_percent
+            - gravity
