@@ -5,5 +5,21 @@ metadata:
   namespace: homepage
 data:
   settings.yaml: |
-    title: HomeLab
+    title: Chan's HomeLab
     theme: dark
+    color: slate
+
+    headerStyle: clean
+
+    layout:
+      Kubernetes:
+        style: row
+        columns: 3
+
+      Monitoring:
+        style: row
+        columns: 2
+
+      Network:
+        style: row
+        columns: 2
