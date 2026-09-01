@@ -26,17 +26,17 @@ data:
             href: http://kuma.home
             description: Service monitoring
 
-            - Pi-hole:
-        icon: pi-hole.png
-        href: http://192.168.68.97/admin
-        description: DNS filtering and local DNS
-        widget:
-          type: pihole
-          url: http://192.168.68.97
-          version: 6
-          key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
-          fields:
-            - queries
-            - blocked
-            - blocked_percent
-            - gravity
+        - Pi-hole:
+            icon: pi-hole.png
+            href: http://192.168.68.97/admin
+            description: DNS filtering and local DNS
+            widget:
+              type: pihole
+              url: http://192.168.68.97
+              version: 6
+              key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
+              fields:
+                - queries
+                - blocked
+                - blocked_percent
+                - gravity
