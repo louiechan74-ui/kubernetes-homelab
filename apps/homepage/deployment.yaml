@@ -21,7 +21,11 @@ spec:
           env:
             - name: HOMEPAGE_ALLOWED_HOSTS
               value: "homepage.home"
-
+              
+          envFrom:
+            - secretRef:
+                name: homepage-secrets
+                
           volumeMounts:
             - name: homepage-data
               mountPath: /app/config
