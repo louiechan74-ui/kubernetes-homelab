@@ -21,3 +21,10 @@ spec:
           env:
             - name: HOMEPAGE_ALLOWED_HOSTS
               value: "homepage.home"
+          volumeMounts:
+            - name: homepage-config
+              mountPath: /app/config
+      volumes:
+        - name: homepage-config
+          configMap:
+            name: homepage-config
