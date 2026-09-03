@@ -58,6 +58,8 @@ spec:
             - name: consume
               mountPath: /usr/src/paperless/consume
               subPath: consume
+            - name: PAPERLESS_CONSUMER_POLLING_INTERVAL
+              value: "10"
       volumes:
         - name: data
           persistentVolumeClaim:
