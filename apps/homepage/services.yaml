@@ -14,6 +14,10 @@
         href: http://longhorn.home
         description: Persistent storage and volumes
 
+     - Paperless-ngx:
+        icon: paperless-ngx.png
+        href: http://paperless.home
+        description: Document management and OCR
 - Monitoring:
     - Grafana:
         icon: grafana.png
